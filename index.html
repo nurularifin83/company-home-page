@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Company Home Page</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="og:title" content="Company Home Page" />
+    <meta name="og:description" content="Responsive Company Home Page" />
+    <link rel="stylesheet" href="./resources/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/76a936d67b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">ihsibustim</a>
+      </div>
+      <nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#clients">Clients</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="slider" id="home">
+      <div
+        class="slide active"
+        style="background-image: url('./resources/images/sliders/1.jpg')"
+      >
+        <div class="slider-caption slider-caption-center">
+          <h2>Welcome to Ihsibustim</h2>
+          <p>
+            Create just what you need for your Perfect Website. Choose from a
+            wide range of Elements & simply put them on our Canvas.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="slide"
+        style="background-image: url('resources/images/sliders/2.jpg')"
+      >
+        <div class="slider-caption slider-caption-center">
+          <h2>Beautifully Flexible</h2>
+          <p>
+            Looks beautiful & ultra-sharp on Retina Screen Displays. Powerful
+            Layout with Responsive functionality that can be adapted to any
+            screen size.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="slide"
+        style="background-image: url('./resources/images/sliders/3.jpg')"
+      >
+        <div class="slider-caption-last">
+          <h2>Great Performance</h2>
+          <p>
+            You'll be surprised to see the Final Results of your Creation &
+            would crave for more.
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <div class="arrows">
+        <div class="prev" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="next" onclick="moveSlide(1)">&#10095;</div>
+      </div>
+
+      <!-- Slide Indicator -->
+      <div class="indicator">
+        <span onclick="setSlide(0)" class="active"></span>
+        <span onclick="setSlide(1)"></span>
+        <span onclick="setSlide(2)"></span>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2
+          class="mx-auto mb-5 font-body"
+          style="max-width: 700px; font-size: 40px"
+        >
+          A digital web studio creating stunning & engaging online experiences
+        </h2>
+        <p class="lead mx-auto mb-5" style="max-width: 800px">
+          Ford Foundation reduce child mortality fight against oppression
+          refugee disruption pursue these aspirations effect. Free-speech Nelson
+          Mandela change liberal; challenges of our times sustainability
+          institutions.
+        </p>
+        <div class="row mt-6">
+          <div class="col mb-5">
+            <div class="team">
+              <div class="team-image">
+                <img src="./resources/images/teams/1.jpg" alt="" />
+              </div>
+              <div class="team-desc">
+                <div class="team-title">
+                  <h4>Nurul Arifin</h4>
+                  <span>CEO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="team">
+              <div class="team-image">
+                <img src="./resources/images/teams/2.jpg" alt="" />
+              </div>
+              <div class="team-desc">
+                <div class="team-title">
+                  <h4>Mary Jane</h4>
+                  <span>CO-FOUNDER</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="team">
+              <div class="team-image">
+                <img src="./resources/images/teams/3.jpg" alt="" />
+              </div>
+              <div class="team-desc">
+                <div class="team-title">
+                  <h4>JOSH CLARK</h4>
+                  <span>SALES</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2
+          class="mx-auto mb-5 font-body"
+          style="max-width: 700px; font-size: 40px"
+        >
+          Our Awesome Works
+        </h2>
+        <p class="lead mx-auto mb-5" style="max-width: 800px">
+          Visit our portfolio and keep your feedback
+        </p>
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="all">Show All</button>
+          <button class="tab-btn" data-tab="icons">Icons</button>
+          <button class="tab-btn" data-tab="illustrations">
+            Illustrations
+          </button>
+          <button class="tab-btn" data-tab="ui-elements">UI Elements</button>
+          <button class="tab-btn" data-tab="media">Media</button>
+          <button class="tab-btn" data-tab="graphics">Graphics</button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-item" data-category="media icons">
+            <img
+              src="./resources/images/projects/item-1.jpg"
+              alt="Open Imagination"
+            />
+            <h3>Open Imagination</h3>
+            <p>Media, Icons</p>
+          </div>
+          <div class="project-item" data-category="illustrations">
+            <img
+              src="./resources/images/projects/item-2.jpg"
+              alt="Locked Steel Gate"
+            />
+            <h3>Locked Steel Gate</h3>
+            <p>Illustrations</p>
+          </div>
+          <div class="project-item" data-category="graphics ui-elements">
+            <img
+              src="./resources/images/projects/item-3.jpg"
+              alt="Mac Sunglasses"
+            />
+            <h3>Mac Sunglasses</h3>
+            <p>Graphics, UI Elements</p>
+          </div>
+          <div class="project-item" data-category="icons illustrations">
+            <img
+              src="./resources/images/projects/item-4.jpg"
+              alt="Morning Dew"
+            />
+            <h3>Morning Dew</h3>
+            <p>Icons, Illustrations</p>
+          </div>
+          <div class="project-item" data-category="ui-elements media">
+            <img
+              src="./resources/images/projects/item-5.jpg"
+              alt="Console Activity"
+            />
+            <h3>Console Activity</h3>
+            <p>UI Elements, Media</p>
+          </div>
+          <div class="project-item" data-category="illustrations graphics">
+            <img src="./resources/images/projects/item-6.jpg" alt="Shake It!" />
+            <h3>Shake It!</h3>
+            <p>Illustrations, Graphics</p>
+          </div>
+          <div class="project-item" data-category="ui-elements icons">
+            <img
+              src="./resources/images/projects/item-7.jpg"
+              alt="Backpack Contents"
+            />
+            <h3>Backpack Contents</h3>
+            <p>UI Elements, Icons</p>
+          </div>
+          <div class="project-item" data-category="graphics">
+            <img
+              src="./resources/images/projects/item-8.jpg"
+              alt="Sunset Bulb Glow"
+            />
+            <h3>Sunset Bulb Glow</h3>
+            <p>Graphics</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="clients">
+      <h2
+        class="mx-auto mb-5 font-body"
+        style="max-width: 700px; font-size: 40px"
+      >
+        Testimonials
+      </h2>
+      <p class="lead mx-auto mb-5" style="max-width: 800px">
+        Check out some of our Client Reviews
+      </p>
+      <div class="testimonials-container">
+        <div class="testimonial-card">
+          <img
+            src="./resources/images/clients/1.jpg"
+            alt="John Doe"
+            class="testimonial-avatar"
+          />
+          <div class="description">
+            <p class="testimonial-text">
+              Incidunt deleniti blanditiis quas aperiam recusandae consequatur
+              ullam quibusdam cum libero illo rerum repellendus!
+            </p>
+            <p class="testimonial-author">John Doe</p>
+            <p class="testimonial-company">XYZ Inc.</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <img
+            src="./resources/images/clients/1.jpg"
+            alt="Collis Ta'eed"
+            class="testimonial-avatar"
+          />
+          <div class="description">
+            <p class="testimonial-text">
+              Natus voluptatum enim quod necessitatibus quis expedita harum
+              provident eos obcaecati id culpa corporis molestias.
+            </p>
+            <p class="testimonial-author">Collis Ta'eed</p>
+            <p class="testimonial-company">Envato Inc.</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <img
+            src="./resources/images/clients/1.jpg"
+            alt="Mary Jane"
+            class="testimonial-avatar"
+          />
+          <div class="description">
+            <p class="testimonial-text">
+              Fugit officia dolor sed harum excepturi ex iusto magnam asperiores
+              molestias qui natus obcaecati facere sint amet.
+            </p>
+            <p class="testimonial-author">Mary Jane</p>
+            <p class="testimonial-company">Google Inc.</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <img
+            src="./resources/images/clients/1.jpg"
+            alt="Steve Jobs"
+            class="testimonial-avatar"
+          />
+          <div class="description">
+            <p class="testimonial-text">
+              Similique fugit repellendus expedita excepturi iure perferendis
+              provident quia eaque. Repellendus, vero numquam?
+            </p>
+            <p class="testimonial-author">Steve Jobs</p>
+            <p class="testimonial-company">Apple Inc.</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <img
+            src="./resources/images/clients/1.jpg"
+            alt="Jamie Morrison"
+            class="testimonial-avatar"
+          />
+          <div class="description">
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minus,
+              perspiciatis illum dolorem dolore deleniti labore.
+            </p>
+            <p class="testimonial-author">Jamie Morrison</p>
+            <p class="testimonial-company">Apple Inc.</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <img
+            src="./resources/images/clients/1.jpg"
+            alt="Cyan Ta'eed"
+            class="testimonial-avatar"
+          />
+          <div class="description">
+            <p class="testimonial-text">
+              Porro dolorem saepe reiciendis nihil minus neque. Ducimus rem
+              necessitatibus repellat laborum nemo quod.
+            </p>
+            <p class="testimonial-author">Cyan Ta'eed</p>
+            <p class="testimonial-company">TutsPlus+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="copyrights">
+      <div class="container">
+        <div class="row">
+          <div class="col first">
+            Copyrights © 2023 All Rights Reserved by Ihsibustim Inc.
+            <br />
+            <div class="copyright-links">
+              <a href="">Terms of Use</a> /
+              <a href="">Privacy Policy</a>
+            </div>
+          </div>
+          <div class="col second">
+            <div class="social-media">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-tiktok"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <i class="fa-regular fa-envelope"></i>
+            info@ihsibustim.com
+            <span>.</span>
+            <i class="fa-solid fa-phone"></i>
+            +62 823-7890-1010
+            <span>.</span>
+            <i class="fa-brands fa-skype"></i>
+            IhsibustimOnSkype
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./resources/script.js"></script>
+  </body>
+</html>
